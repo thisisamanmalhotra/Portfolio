@@ -6,7 +6,7 @@ function initializeReactGA() {
   ReactGA.pageview("/notfound");
 }
 
-const NoMatch = () => {
+function NoMatch() {
   initializeReactGA();
 
   return (
@@ -14,6 +14,6 @@ const NoMatch = () => {
       <h1>Oops! Page Not Found</h1>
     </div>
   );
-};
+}
 
 export default NoMatch;

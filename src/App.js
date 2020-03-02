@@ -15,7 +15,7 @@ function initializeReactGA() {
   ReactGA.pageview("/homepage");
 }
 
-const App = () => {
+function App() {
   initializeReactGA();
 
   return (
@@ -32,6 +32,6 @@ const App = () => {
       <Footer />
     </Fragment>
   );
-};
+}
 
 export default App;

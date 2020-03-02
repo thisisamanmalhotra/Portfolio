@@ -41,7 +41,7 @@ function initializeReactGA() {
   ReactGA.pageview("/contact");
 }
 
-const Contact = () => {
+function Contact() {
   initializeReactGA();
 
   return (
@@ -60,6 +60,6 @@ const Contact = () => {
       <a href="mailto: vivekmittal199@gmail.com">vivekmittal199@gmail.com</a>
     </Style>
   );
-};
+}
 
 export default Contact;

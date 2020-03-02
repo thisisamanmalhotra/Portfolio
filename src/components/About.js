@@ -43,7 +43,7 @@ function initializeReactGA() {
   ReactGA.pageview("/about");
 }
 
-const About = () => {
+function About() {
   initializeReactGA();
 
   return (
@@ -99,6 +99,6 @@ const About = () => {
       </p>
     </Style>
   );
-};
+}
 
 export default About;
