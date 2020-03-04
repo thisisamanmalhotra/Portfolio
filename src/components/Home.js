@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+
+import Card from "./Card";
 import vivek from "./../assets/images/vivek-min.png";
 
 const Main = styled.div`
@@ -111,6 +113,7 @@ const Home = () => {
           <img src={vivek} alt="Vivek" width="308px" height="308px" />
         </div>
       </div>
+      <Card />
     </Main>
   );
 };
