@@ -9,6 +9,7 @@ import NoMatch from "./components/NoMatch";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 function initializeReactGA() {
   ReactGA.initialize("UA-159444607-1");
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
           <Route component={NoMatch} />
         </Switch>
       </Layout>
