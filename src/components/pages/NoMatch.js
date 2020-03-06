@@ -1,5 +1,10 @@
 import React from "react";
 import ReactGA from "react-ga";
+import styled from "styled-components";
+
+const MainWrapper = styled.section`
+  padding-top: 7rem;
+`;
 
 function initializeReactGA() {
   ReactGA.initialize("UA-159444607-1");
@@ -10,9 +15,9 @@ function NoMatch() {
   initializeReactGA();
 
   return (
-    <div style={{ paddingTop: "100px" }}>
-      <h1>Oops! Page Not Found</h1>
-    </div>
+    <MainWrapper>
+      <h1>Page not found!</h1>
+    </MainWrapper>
   );
 }
 

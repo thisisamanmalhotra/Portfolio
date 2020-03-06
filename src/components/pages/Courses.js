@@ -16,10 +16,10 @@ const MainWrapper = styled.section`
   }
 `;
 
-const Projects = () => (
+const Courses = () => (
   <MainWrapper>
-    <h2>PROJECTS</h2>
+    <h2>COURSES</h2>
   </MainWrapper>
 );
 
-export default Projects;
+export default Courses;

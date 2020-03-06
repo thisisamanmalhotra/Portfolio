@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Card from "./Card";
-import vivek from "./../assets/images/vivek-min.png";
+import vivek from "./../../assets/images/vivek-min.png";
 
 const Main = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const Main = styled.div`
   .col2 {
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   @media (max-width: 775px) {

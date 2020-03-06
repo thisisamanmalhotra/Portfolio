@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ReactGA from "react-ga";
 
-const Style = styled.div`
+const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 7rem;
@@ -27,7 +27,7 @@ const Style = styled.div`
     font-style: italic;
   }
 
-  .skillstack {
+  .skill-stack {
     font-weight: bold;
   }
 
@@ -47,7 +47,7 @@ function About() {
   initializeReactGA();
 
   return (
-    <Style>
+    <MainWrapper>
       <h2>ABOUT ME</h2>
       <br />
       <h5>
@@ -89,7 +89,7 @@ function About() {
       </p>
       <br />
       <br />
-      <p className="skillstack">
+      <p className="skill-stack">
         My current Stack of languages/technologies is:
       </p>
       <br />
@@ -97,7 +97,7 @@ function About() {
         HTML5 - CSS3 - JAVASCRIPT - MONGODB - EXPRESSJS - REACTJS - NODEJS -
         STYLED COMPONENTS - FIGMA - GITHUB - CONTENTFUL - MYSQL
       </p>
-    </Style>
+    </MainWrapper>
   );
 }
 
