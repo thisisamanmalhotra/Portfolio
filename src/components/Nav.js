@@ -15,6 +15,7 @@ const Style = styled.div`
   width: 100%;
   opacity: 0.97;
   position: fixed;
+  z-index: 1;
 
   .unordered {
     display: flex;
