@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import ReactGA from "react-ga";
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import NoMatch from "./components/NoMatch";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import NoMatch from "./components/pages/NoMatch";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import Projects from "./components/pages/Projects";
 
 function initializeReactGA() {
   ReactGA.initialize("UA-159444607-1");
