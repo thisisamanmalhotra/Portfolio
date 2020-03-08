@@ -5,7 +5,7 @@ import ReactGA from "react-ga";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import NoMatch from "./components/pages/NoMatch";
+import Error from "./components/pages/404";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -32,7 +32,7 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/books" component={Books} />
           <Route path="/courses" component={Courses} />
-          <Route component={NoMatch} />
+          <Route component={Error} />
         </Switch>
       </Layout>
       <Footer />

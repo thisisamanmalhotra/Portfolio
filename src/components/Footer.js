@@ -13,7 +13,8 @@ const Style = styled.section`
   flex-direction: column;
   justify-content: space-around;
   font-size: 2rem;
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 0.8rem;
 
   .a {
     color: #000;
