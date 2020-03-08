@@ -159,6 +159,16 @@ const MainWrapper = styled.section`
       color: #fff;
     }
   }
+
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 function initializeReactGA() {

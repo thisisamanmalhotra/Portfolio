@@ -19,6 +19,7 @@ const MainWrapper = styled.section`
 const Projects = () => (
   <MainWrapper>
     <h2>PROJECTS</h2>
+    <p>Coming Soon!</p>
   </MainWrapper>
 );
 

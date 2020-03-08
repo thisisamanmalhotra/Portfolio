@@ -19,6 +19,7 @@ const MainWrapper = styled.section`
 const Books = () => (
   <MainWrapper>
     <h2>BOOKS</h2>
+    <p>Coming Soon!</p>
   </MainWrapper>
 );
 
