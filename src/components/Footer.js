@@ -46,7 +46,7 @@ const Style = styled.section`
 
   @media (max-width: 500px) {
     .col2 {
-      flex-direction: column;
+      font-size: 0.9rem;
     }
   }
 `;

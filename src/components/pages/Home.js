@@ -23,7 +23,7 @@ const Main = styled.div`
   }
 
   .span1 {
-    color: #089eca;
+    color: #089;
   }
 
   .span2 {
@@ -60,12 +60,7 @@ const Main = styled.div`
   .col2 img {
     border-radius: 50%;
     border: 2px solid #fff;
-    background: url(img/duck.png) no-repeat;
-    -moz-box-shadow: 0px 6px 5px #ccc;
-    -webkit-box-shadow: 0px 6px 5px #ccc;
     box-shadow: 0px 6px 5px #ccc;
-    -moz-border-radius: 190px;
-    -webkit-border-radius: 190px;
     border-radius: 190px;
   }
 
