@@ -156,7 +156,7 @@ const Projects = () => (
           <br />
           <p className="skills">REACTJS - STYLED COMPONENTS</p>
           <button className="btn">
-            <a href="https://vivekmittal.co.in">
+            <a href="/">
               <FaLink className="icon" />
               VISIT
             </a>
