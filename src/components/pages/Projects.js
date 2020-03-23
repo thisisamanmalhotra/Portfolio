@@ -156,7 +156,7 @@ const Projects = () => (
           <br />
           <p className="skills">REACTJS - STYLED COMPONENTS</p>
           <button className="btn">
-            <a href="/">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <FaLink className="icon" />
               VISIT
             </a>
@@ -183,7 +183,11 @@ const Projects = () => (
           <br />
           <p className="skills">REACTJS - CONTENTFUL CMS</p>
           <button className="btn">
-            <a href="https://resort.ga">
+            <a
+              href="https://resort.ga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLink className="icon" />
               VISIT
             </a>
@@ -210,7 +214,11 @@ const Projects = () => (
           <br />
           <p className="skills">HTML5 - CSS3 - VANILLA JAVASCRIPT</p>
           <button className="btn">
-            <a href="https://srmth.in">
+            <a
+              href="https://srmth.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLink className="icon" />
               VISIT
             </a>

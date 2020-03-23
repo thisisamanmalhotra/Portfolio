@@ -25,7 +25,6 @@ const Style = styled.div`
   }
 
   a {
-    color: #000;
     font-weight: bold;
   }
 
@@ -57,7 +56,9 @@ function Contact() {
         Feel <span>free</span> to <span>reach me</span> at:
       </p>
       <br />
-      <a href="mailto: vivekmittal199@gmail.com">vivekmittal199@gmail.com</a>
+      <a href="mailto: vivekmittal199@gmail.com" className="lmao">
+        vivekmittal199@gmail.com
+      </a>
     </Style>
   );
 }
