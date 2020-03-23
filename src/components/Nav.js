@@ -3,6 +3,10 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import storage from "local-storage-fallback";
 
 import logo from "./../assets/images/logo.png";
+import Sun from "./../assets/images/sun.svg";
+import Moon from "./../assets/images/moon.svg";
+
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Style = styled.div`
   display: flex;
@@ -130,7 +134,7 @@ const Nav = () => {
                     onClick={e =>
                       setTheme(
                         theme.mode === "dark"
-                          ? { mode: "light" }
+                          ? { mode: "light", content: <FaSun /> }
                           : { mode: "dark" }
                       )
                     }
