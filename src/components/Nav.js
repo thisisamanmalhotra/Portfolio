@@ -3,27 +3,31 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import storage from "local-storage-fallback";
 
 import logo from "./../assets/images/logo.png";
-import Sun from "./../assets/images/sun.svg";
-import Moon from "./../assets/images/moon.svg";
-
-import { FaMoon, FaSun } from "react-icons/fa";
+import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
+import { ReactComponent as MoonIcon } from "./../assets/images/moon.svg";
 
 const Style = styled.div`
   display: flex;
   flex-direction: row;
   background-color: ${props => (props.theme.mode === "dark" ? "#222" : "#EEE")};
+  transition: 0.2s ease-in-out;
   -webkit-box-shadow: ${props =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
+  transition: 0.2s ease-in-out;
+
   -moz-box-shadow: ${props =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
+  transition: 0.2s ease-in-out;
+
   box-shadow: ${props =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
+  transition: 0.2s ease-in-out;
 
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem;
@@ -72,12 +76,47 @@ const Style = styled.div`
 
   a {
     color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#222")};
+    transition: 0.2s ease-in-out;
   }
 
   a:hover {
     color: #089;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+  }
+
+  button {
+    border-radius: 25px;
+    border: 1.5px solid black;
+    font-weight: bold;
+    height: 3.5vh;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    background-color: ${props =>
+      props.theme.mode === "dark" ? "#222" : "#fff"};
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    svg {
+      height: auto;
+      width: 1rem;
+      transition: all 0.3s linear;
+
+      // sun icon
+      &:first-child {
+        transform: ${props =>
+          props.theme.mode === "dark" ? "translateY(-100px)" : "translateY(0)"};
+      }
+
+      // moon icon
+      &:nth-child(2) {
+        transform: ${props =>
+          props.theme.mode === "dark" ? "translateY(0)" : "translateY(100px)"};
+      }
+    }
   }
 `;
 
@@ -86,15 +125,18 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${props =>
       props.theme.mode === "dark" ? "#222" : "#EEE"};
     color: ${props => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+    transition: 0.2s ease-in-out;
   }
 
   .card {
     background-color: ${props =>
       props.theme.mode === "dark" ? "#222" : "#EEE"};
+      transition: 0.2s ease-in-out;
   }
 
   .lmao {
     color: ${props => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+    transition: 0.2s ease-in-out;
   }
 `;
 
@@ -134,12 +176,13 @@ const Nav = () => {
                     onClick={e =>
                       setTheme(
                         theme.mode === "dark"
-                          ? { mode: "light", content: <FaSun /> }
+                          ? { mode: "light" }
                           : { mode: "dark" }
                       )
                     }
                   >
-                    Toggle
+                    <SunIcon />
+                    <MoonIcon />
                   </button>
                 </li>
               </ul>

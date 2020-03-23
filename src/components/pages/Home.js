@@ -18,6 +18,22 @@ const Main = styled.div`
     font-weight: bold;
   }
 
+  .handshake {
+    animation: shake 5s infinite linear;
+  }
+
+  @keyframes shake {
+    0% {
+     transform: translateX(10deg); 
+    }
+    50% {
+     transform: translateX(20deg); 
+    }
+    100% {
+     transform: translateX(0deg); 
+    }
+  }
+
   .container {
     width: 50%;
   }
@@ -160,7 +176,8 @@ const Home = () => {
         <div className="container">
           <div className="col1">
             <h1>
-              Hi! 👋 I'm <span className="span1">Vivek</span>
+              Hi! <span className="handshake">👋</span> I'm{" "}
+              <span className="span1">Vivek</span>
             </h1>
             <h1>a Developer based in Chennai</h1>
             <h1>
