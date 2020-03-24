@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaLink } from "react-icons/fa";
 
-import portfolio from "./../../assets/images/portfolio-site.png";
+import portfolio2 from "./../../assets/images/portfolio2.png";
 import beach from "./../../assets/images/beach.png";
 import srmth from "./../../assets/images/srmth.png";
 
@@ -45,8 +45,8 @@ const MainWrapper = styled.section`
 
   .img {
     margin: 2rem;
-    border: 3px solid #fff;
-    box-shadow: 5px 6px 5px #ccc;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px #ccc;
   }
 
   .desc {
@@ -145,7 +145,7 @@ const Projects = () => (
       <p className="heading">Portfolio Site</p>
       <div className="main">
         <div className="img img1">
-          <img src={portfolio} alt="Portfolio Site" />
+          <img src={portfolio2} alt="Portfolio Site" />
         </div>
         <div className="desc desc1">
           <p>

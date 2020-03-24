@@ -95,8 +95,7 @@ const Style = styled.div`
     background-color: ${props =>
       props.theme.mode === "dark" ? "#222" : "#fff"};
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: space-around;
     overflow: hidden;
     position: relative;
 
@@ -105,13 +104,11 @@ const Style = styled.div`
       width: 1rem;
       transition: all 0.3s linear;
 
-      // sun icon
       &:first-child {
         transform: ${props =>
           props.theme.mode === "dark" ? "translateY(-100px)" : "translateY(0)"};
       }
 
-      // moon icon
       &:nth-child(2) {
         transform: ${props =>
           props.theme.mode === "dark" ? "translateY(0)" : "translateY(100px)"};
