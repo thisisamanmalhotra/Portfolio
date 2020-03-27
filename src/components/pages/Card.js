@@ -83,11 +83,11 @@ const Card = () => (
     </div>
     <div className="card">
       <div className="heading">
-        <a href="/books">BOOKS</a>
+        <a href="/blog">BLOGS</a>
       </div>
       <hr />
       <div className="description">
-        Some of the incredible books which I read in my alone time.
+        Tips and tricks to make lives of developers easy.
       </div>
     </div>
     <div className="card">
