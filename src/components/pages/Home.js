@@ -178,7 +178,7 @@ const Home = () => {
         </div>
         <div className="col3">
           <button className="btn">
-            <a href={resume}>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <span class="btn-label">RESUME</span>
             </a>
           </button>

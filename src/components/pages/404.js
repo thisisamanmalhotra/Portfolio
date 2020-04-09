@@ -137,26 +137,37 @@ const MainWrapper = styled.section`
   button {
     margin: 3rem 0;
     border-radius: 24px;
-    border: 4px solid #089;
+    border: 0;
+    background: #089;
   }
 
   .btn {
     text-decoration: none;
     font-size: 1rem;
-    color: #089;
+    color: #fff;
     font-weight: bold;
   }
 
   .icon {
-    color: #089;
+    color: #fff;
   }
 
   button:hover {
-    transition: 0.5s ease-in-out;
-    background: #089;
-    .btn,
-    .icon {
-      color: #fff;
+    animation: jump 1.5s ease 0s normal;
+  }
+
+  @keyframes jump {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
     }
   }
 
