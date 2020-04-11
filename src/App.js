@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Projects from "./components/pages/Projects";
 import Courses from "./components/pages/Courses";
 import Blog from "./components/pages/Blog";
+import A from "./components/pages/A";
 
 function initializeReactGA() {
   ReactGA.initialize("UA-159444607-1");
@@ -32,6 +33,7 @@ function App() {
           <Route path="/projects" component={Projects} />
           <Route path="/blog" component={Blog} />
           <Route path="/courses" component={Courses} />
+          <Route path="/a" component={A} />
           <Route component={Error} />
         </Switch>
       </Layout>
