@@ -5,7 +5,7 @@ import {
   FaLinkedin,
   FaCodepen,
   FaGithub,
-  FaTwitter
+  FaTwitter,
 } from "react-icons/fa";
 
 const Style = styled.section`
@@ -87,7 +87,7 @@ const Footer = () => (
         <FaTwitter />
       </a>
       <a
-        href="https://www.instagram.com/vivek96_/"
+        href="https://www.instagram.com/vivekk.js/"
         target="_blank"
         rel="noopener noreferrer"
         className="a"
