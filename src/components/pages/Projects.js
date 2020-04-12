@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { FaLink } from "react-icons/fa";
 
-import portfolio2 from "./../../assets/images/portfolio2.png";
-import beach from "./../../assets/images/beach.png";
-import srmth from "./../../assets/images/srmth.png";
+import port1 from "./../../assets/images/port1.png";
+import beach1 from "./../../assets/images/beach1.png";
+import srmth1 from "./../../assets/images/srmth1.png";
 
 const MainWrapper = styled.section`
   display: flex;
@@ -145,7 +145,7 @@ const Projects = () => (
       <p className="heading">Portfolio Site</p>
       <div className="main">
         <div className="img img1">
-          <img src={portfolio2} alt="Portfolio Site" />
+          <img src={port1} alt="Portfolio Site" />
         </div>
         <div className="desc desc1">
           <p>
@@ -172,7 +172,7 @@ const Projects = () => (
       <p className="heading">Beach Resort</p>
       <div className="main">
         <div className="img img2">
-          <img src={beach} alt="Beach Resort" width="60%" />
+          <img src={beach1} alt="Beach Resort" width="60%" />
         </div>
         <div className="desc desc2">
           <p>
@@ -203,7 +203,7 @@ const Projects = () => (
       <p className="heading">SRM Team Humanoid Website</p>
       <div className="main">
         <div className="img img3">
-          <img src={srmth} alt="SRM Team Humanoid" width="60%" />
+          <img src={srmth1} alt="SRM Team Humanoid" width="60%" />
         </div>
         <div className="desc desc3">
           <p>

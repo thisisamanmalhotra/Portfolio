@@ -9,10 +9,9 @@ import Error from "./components/pages/404";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Projects from "./components/pages/Projects";
+import Project from "./components/pages/Project";
 import Courses from "./components/pages/Courses";
 import Blog from "./components/pages/Blog";
-import A from "./components/pages/A";
 
 function initializeReactGA() {
   ReactGA.initialize("UA-159444607-1");
@@ -30,10 +29,9 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/projects" component={Project} />
           <Route path="/blog" component={Blog} />
           <Route path="/courses" component={Courses} />
-          <Route path="/a" component={A} />
           <Route component={Error} />
         </Switch>
       </Layout>

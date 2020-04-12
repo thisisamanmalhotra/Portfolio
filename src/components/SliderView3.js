@@ -4,9 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import port1 from "./../assets/images/port1.png";
-import port2 from "./../assets/images/port2.png";
-import port3 from "./../assets/images/port3.png";
+import srmth1 from "./../assets/images/srmth1.jpg";
+import srmth2 from "./../assets/images/srmth2.jpg";
 
 const Wrapper = styled.div`
   img {
@@ -17,7 +16,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export default class SliderView extends Component {
+export default class SliderView3 extends Component {
   render() {
     const settings = {
       dots: true,
@@ -31,13 +30,10 @@ export default class SliderView extends Component {
       <Wrapper>
         <Slider {...settings}>
           <div>
-            <img src={port1} alt="Portfolio" />
+            <img src={srmth1} alt="Portfolio" />
           </div>
           <div>
-            <img src={port2} alt="Portfolio" />
-          </div>
-          <div>
-            <img src={port3} alt="Portfolio" />
+            <img src={srmth2} alt="Portfolio" />
           </div>
         </Slider>
       </Wrapper>

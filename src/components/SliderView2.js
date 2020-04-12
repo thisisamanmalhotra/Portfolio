@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import port1 from "./../assets/images/port1.png";
-import port2 from "./../assets/images/port2.png";
-import port3 from "./../assets/images/port3.png";
+import beach1 from "./../assets/images/beach1.png";
+import beach2 from "./../assets/images/beach2.jpg";
+import beach3 from "./../assets/images/beach3.jpg";
 
 const Wrapper = styled.div`
   img {
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export default class SliderView extends Component {
+export default class SliderView2 extends Component {
   render() {
     const settings = {
       dots: true,
@@ -31,13 +31,13 @@ export default class SliderView extends Component {
       <Wrapper>
         <Slider {...settings}>
           <div>
-            <img src={port1} alt="Portfolio" />
+            <img src={beach1} alt="Portfolio" />
           </div>
           <div>
-            <img src={port2} alt="Portfolio" />
+            <img src={beach2} alt="Portfolio" />
           </div>
           <div>
-            <img src={port3} alt="Portfolio" />
+            <img src={beach3} alt="Portfolio" />
           </div>
         </Slider>
       </Wrapper>
