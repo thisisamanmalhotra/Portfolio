@@ -1,9 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import SliderView from "../SliderView";
-import SliderView2 from "../SliderView2";
-import SliderView3 from "../SliderView3";
 import { FaLink } from "react-icons/fa";
+
+import port1 from "./../../assets/images/port1.png";
+import port2 from "./../../assets/images/port2.png";
+import port3 from "./../../assets/images/port3.png";
+import srmth1 from "./../../assets/images/srmth1.jpg";
+import srmth2 from "./../../assets/images/srmth2.jpg";
+import srmth3 from "./../../assets/images/srmth3.png";
+import beach1 from "./../../assets/images/beach1.png";
+import beach2 from "./../../assets/images/beach2.jpg";
+import beach3 from "./../../assets/images/beach3.jpg";
 
 const Wrapper = styled.div`
   padding-top: 7rem;
@@ -112,7 +120,7 @@ export default function A() {
         <p className="heading">Portfolio Site</p>
         <div className="row">
           <div className="col1">
-            <SliderView />
+            <SliderView img1={port1} img2={port2} img3={port3} />
           </div>
           <div className="col2">
             <p>
@@ -158,7 +166,7 @@ export default function A() {
             </button>
           </div>
           <div className="col1">
-            <SliderView2 />
+            <SliderView img1={beach1} img2={beach2} img3={beach3} />
           </div>
         </div>
       </div>
@@ -170,7 +178,7 @@ export default function A() {
         <p className="heading">SRM Team Humanoid</p>
         <div className="row">
           <div className="col1">
-            <SliderView3 />
+            <SliderView img1={srmth1} img2={srmth2} img3={srmth3} />
           </div>
           <div className="col2">
             <p>

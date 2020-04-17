@@ -27,11 +27,11 @@ function App() {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects" component={Project} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/courses" component={Courses} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/projects" component={Project} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/courses" component={Courses} />
           <Route component={Error} />
         </Switch>
       </Layout>
