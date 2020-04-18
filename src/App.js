@@ -10,7 +10,6 @@ import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Project from "./components/pages/Project";
-import Courses from "./components/pages/Courses";
 import Blog from "./components/pages/Blog";
 
 function initializeReactGA() {
@@ -31,7 +30,6 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects" component={Project} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/courses" component={Courses} />
           <Route component={Error} />
         </Switch>
       </Layout>

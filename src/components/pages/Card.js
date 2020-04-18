@@ -48,6 +48,11 @@ const MainWrapper = styled.section`
     font-size: 1.2rem;
     font-weight: bold;
     color: #089;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   a:hover {
@@ -88,15 +93,6 @@ const Card = () => (
       <hr />
       <div className="description">
         Tips and tricks to make lives of developers easy.
-      </div>
-    </div>
-    <div className="card">
-      <div className="heading">
-        <a href="/courses">COURSES</a>
-      </div>
-      <hr />
-      <div className="description">
-        Best courses by amazing developers which you can follow.
       </div>
     </div>
   </MainWrapper>

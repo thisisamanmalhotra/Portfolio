@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Card from "./Card";
-import vivek from "./../../assets/images/vivek-min.png";
+import vivek from "./../../assets/images/vivek.jpg";
 import resume from "./../../assets/Resume.pdf";
 
 const Main = styled.div`
@@ -58,7 +58,6 @@ const Main = styled.div`
   }
 
   .col2 img {
-    border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0px 6px 5px #ccc;
     border-radius: 190px;

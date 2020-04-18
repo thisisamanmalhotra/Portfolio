@@ -3,15 +3,15 @@ import styled from "styled-components";
 import SliderView from "../SliderView";
 import { FaLink } from "react-icons/fa";
 
-import port1 from "./../../assets/images/port1.png";
-import port2 from "./../../assets/images/port2.png";
-import port3 from "./../../assets/images/port3.png";
-import srmth1 from "./../../assets/images/srmth1.jpg";
-import srmth2 from "./../../assets/images/srmth2.jpg";
-import srmth3 from "./../../assets/images/srmth3.png";
-import beach1 from "./../../assets/images/beach1.png";
-import beach2 from "./../../assets/images/beach2.jpg";
-import beach3 from "./../../assets/images/beach3.jpg";
+import port1 from "./../../assets/images/port1.jpeg";
+import port2 from "./../../assets/images/port2.jpeg";
+import port3 from "./../../assets/images/port3.jpeg";
+import srmth1 from "./../../assets/images/srmth1.jpeg";
+import srmth2 from "./../../assets/images/srmth2.jpeg";
+import srmth3 from "./../../assets/images/srmth3.jpeg";
+import beach1 from "./../../assets/images/beach1.jpeg";
+import beach2 from "./../../assets/images/beach2.jpeg";
+import beach3 from "./../../assets/images/beach3.jpeg";
 
 const Wrapper = styled.div`
   padding-top: 7rem;
