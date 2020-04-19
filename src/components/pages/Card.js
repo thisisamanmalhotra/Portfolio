@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const MainWrapper = styled.section`
   display: flex;
@@ -79,7 +80,7 @@ const Card = () => (
   <MainWrapper>
     <div className="card">
       <div className="heading">
-        <a href="/projects">PROJECTS</a>
+        <Link to="/projects">PROJECTS</Link>
       </div>
       <hr />
       <div className="description">
@@ -88,7 +89,7 @@ const Card = () => (
     </div>
     <div className="card">
       <div className="heading">
-        <a href="/blog">BLOGS</a>
+        <Link to="/blog">BLOGS</Link>
       </div>
       <hr />
       <div className="description">

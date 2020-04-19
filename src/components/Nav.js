@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import storage from "local-storage-fallback";
+import { Link } from "react-router-dom";
 
 import logo from "./../assets/images/logo.png";
 import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
@@ -9,21 +10,22 @@ import { ReactComponent as MoonIcon } from "./../assets/images/moon.svg";
 const Style = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: ${props => (props.theme.mode === "dark" ? "#222" : "#EEE")};
+  background-color: ${(props) =>
+    props.theme.mode === "dark" ? "#222" : "#EEE"};
   transition: 0.2s ease-in-out;
-  -webkit-box-shadow: ${props =>
+  -webkit-box-shadow: ${(props) =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
   transition: 0.2s ease-in-out;
 
-  -moz-box-shadow: ${props =>
+  -moz-box-shadow: ${(props) =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
   transition: 0.2s ease-in-out;
 
-  box-shadow: ${props =>
+  box-shadow: ${(props) =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
@@ -75,7 +77,7 @@ const Style = styled.div`
   }
 
   a {
-    color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#222")};
+    color: ${(props) => (props.theme.mode === "dark" ? "#EEE" : "#222")};
     transition: 0.2s ease-in-out;
   }
 
@@ -92,7 +94,7 @@ const Style = styled.div`
     height: 3.5vh;
     outline: none;
     transition: 0.2s ease-in-out;
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.theme.mode === "dark" ? "#222" : "#fff"};
     display: flex;
     justify-content: space-around;
@@ -105,12 +107,12 @@ const Style = styled.div`
       transition: all 0.3s linear;
 
       &:first-child {
-        transform: ${props =>
+        transform: ${(props) =>
           props.theme.mode === "dark" ? "translateY(-100px)" : "translateY(0)"};
       }
 
       &:nth-child(2) {
-        transform: ${props =>
+        transform: ${(props) =>
           props.theme.mode === "dark" ? "translateY(0)" : "translateY(100px)"};
       }
     }
@@ -119,20 +121,20 @@ const Style = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.theme.mode === "dark" ? "#222" : "#EEE"};
-    color: ${props => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#222")};
     transition: 0.2s ease-in-out;
   }
 
   .card {
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.theme.mode === "dark" ? "#222" : "#EEE"};
       transition: 0.2s ease-in-out;
   }
 
   .lmao {
-    color: ${props => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#222")};
     transition: 0.2s ease-in-out;
   }
 `;
@@ -156,21 +158,21 @@ const Nav = () => {
         <div className="container">
           <div className="row">
             <div className="column1">
-              <a href="/">
+              <Link to="/">
                 <img src={logo} width="60" height="50" alt="Vivek" />
-              </a>
+              </Link>
             </div>
             <div className="column2">
               <ul className="unordered">
                 <li>
-                  <a href="/about">ABOUT ME</a>
+                  <Link to="/about">ABOUT ME</Link>
                 </li>
                 <li>
-                  <a href="/contact">CONTACT</a>
+                  <Link to="/contact">CONTACT</Link>
                 </li>
                 <li>
                   <button
-                    onClick={e =>
+                    onClick={(e) =>
                       setTheme(
                         theme.mode === "dark"
                           ? { mode: "light" }
