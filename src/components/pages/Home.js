@@ -13,6 +13,10 @@ const Main = styled.div`
   align-items: center;
   margin: 0;
 
+  .row {
+    height: 80vh;
+  }
+
   h1 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;

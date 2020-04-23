@@ -3,12 +3,12 @@ import styled from "styled-components";
 import ReactGA from "react-ga";
 
 const Style = styled.div`
-  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  height: 75vh;
 
   h2 {
     color: #089;
