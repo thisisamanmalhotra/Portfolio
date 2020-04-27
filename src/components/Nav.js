@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import storage from "local-storage-fallback";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import logo from "./../assets/images/logo.png";
 import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
@@ -50,6 +50,10 @@ const Style = styled.div`
 
   .column1 {
     width: 70%;
+  }
+
+  .main-nav-link {
+    color: #089;
   }
 
   .column2 {
@@ -158,17 +162,21 @@ const Nav = () => {
         <div className="container">
           <div className="row">
             <div className="column1">
-              <Link to="/">
+              <NavLink exact to="/">
                 <img src={logo} width="60" height="50" alt="Vivek" />
-              </Link>
+              </NavLink>
             </div>
             <div className="column2">
               <ul className="unordered">
                 <li>
-                  <Link to="/about">ABOUT ME</Link>
+                  <NavLink exact to="/about" activeClassName="main-nav-link">
+                    ABOUT ME
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/contact">CONTACT</Link>
+                  <NavLink exact to="/contact" activeClassName="main-nav-link">
+                    CONTACT
+                  </NavLink>
                 </li>
                 <li>
                   <button
