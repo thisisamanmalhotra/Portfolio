@@ -11,7 +11,7 @@ const Style = styled.div`
   display: flex;
   flex-direction: row;
   background-color: ${(props) =>
-    props.theme.mode === "dark" ? "#222" : "#EEE"};
+    props.theme.mode === "dark" ? "#202224" : "#EEE"};
   transition: 0.2s ease-in-out;
   -webkit-box-shadow: ${(props) =>
     props.theme.mode === "dark"
@@ -81,7 +81,7 @@ const Style = styled.div`
   }
 
   a {
-    color: ${(props) => (props.theme.mode === "dark" ? "#EEE" : "#222")};
+    color: ${(props) => (props.theme.mode === "dark" ? "#EEE" : "#202224")};
     transition: 0.2s ease-in-out;
   }
 
@@ -99,7 +99,7 @@ const Style = styled.div`
     outline: none;
     transition: 0.2s ease-in-out;
     background-color: ${(props) =>
-      props.theme.mode === "dark" ? "#222" : "#fff"};
+      props.theme.mode === "dark" ? "#202224" : "#fff"};
     display: flex;
     justify-content: space-around;
     overflow: hidden;
@@ -126,19 +126,19 @@ const Style = styled.div`
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${(props) =>
-      props.theme.mode === "dark" ? "#222" : "#EEE"};
-    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+      props.theme.mode === "dark" ? "#202224" : "#EEE"};
+    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#202224")};
     transition: 0.2s ease-in-out;
   }
 
   .card {
     background-color: ${(props) =>
-      props.theme.mode === "dark" ? "#222" : "#EEE"};
+      props.theme.mode === "dark" ? "#202224" : "#EEE"};
       transition: 0.2s ease-in-out;
   }
 
   .lmao {
-    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#222")};
+    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#202224")};
     transition: 0.2s ease-in-out;
   }
 `;
