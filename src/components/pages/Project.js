@@ -110,7 +110,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function A() {
+function Projects() {
   return (
     <Wrapper>
       <h2>PROJECTS</h2>
@@ -207,3 +207,5 @@ export default function A() {
     </Wrapper>
   );
 }
+
+export default Projects;

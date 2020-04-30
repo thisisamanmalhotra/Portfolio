@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import storage from "local-storage-fallback";
 import { NavLink } from "react-router-dom";
 
 import logo from "./../assets/images/logo.png";
 import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
 import { ReactComponent as MoonIcon } from "./../assets/images/moon.svg";
+import GlobalStyle from "../components/global";
 
 const Style = styled.div`
   display: flex;
@@ -120,26 +121,6 @@ const Style = styled.div`
           props.theme.mode === "dark" ? "translateY(0)" : "translateY(100px)"};
       }
     }
-  }
-`;
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: ${(props) =>
-      props.theme.mode === "dark" ? "#202224" : "#EEE"};
-    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#202224")};
-    transition: 0.2s ease-in-out;
-  }
-
-  .card {
-    background-color: ${(props) =>
-      props.theme.mode === "dark" ? "#202224" : "#EEE"};
-      transition: 0.2s ease-in-out;
-  }
-
-  .lmao {
-    color: ${(props) => (props.theme.mode === "dark" ? "#cecece" : "#202224")};
-    transition: 0.2s ease-in-out;
   }
 `;
 
