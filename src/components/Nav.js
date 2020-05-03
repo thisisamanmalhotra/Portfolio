@@ -10,26 +10,17 @@ import GlobalStyle from "../components/global";
 
 const Style = styled.div`
   display: flex;
+  letter-spacing: 0.15rem;
   flex-direction: row;
+
   background-color: ${(props) =>
     props.theme.mode === "dark" ? "#202224" : "#EEE"};
-  transition: 0.2s ease-in-out;
-  -webkit-box-shadow: ${(props) =>
-    props.theme.mode === "dark"
-      ? "0 8px 6px -6px #111"
-      : "0 8px 6px -6px #999"};
-  transition: 0.2s ease-in-out;
-
-  -moz-box-shadow: ${(props) =>
-    props.theme.mode === "dark"
-      ? "0 8px 6px -6px #111"
-      : "0 8px 6px -6px #999"};
-  transition: 0.2s ease-in-out;
 
   box-shadow: ${(props) =>
     props.theme.mode === "dark"
       ? "0 8px 6px -6px #111"
       : "0 8px 6px -6px #999"};
+
   transition: 0.2s ease-in-out;
 
   font-family: "IBM Plex Mono", monospace;
@@ -124,10 +115,10 @@ const Style = styled.div`
   }
 `;
 
-function getInitialTheme() {
+const getInitialTheme = () => {
   const savedTheme = storage.getItem("theme");
-  return savedTheme ? JSON.parse(savedTheme) : { mode: "light" };
-}
+  return savedTheme ? JSON.parse(savedTheme) : { mode: "dark" };
+};
 
 const Nav = () => {
   const [theme, setTheme] = useState(getInitialTheme);
@@ -151,7 +142,7 @@ const Nav = () => {
               <ul className="unordered">
                 <li>
                   <NavLink exact to="/about" activeClassName="main-nav-link">
-                    ABOUT ME
+                    ABOUT
                   </NavLink>
                 </li>
                 <li>
