@@ -28,8 +28,8 @@ function App() {
         showUnder={150}
         duration={1000}
         style={{
-          width: "2rem",
-          height: "2rem",
+          width: "2.2rem",
+          height: "2.2rem",
           border: "0",
           borderRadius: "50%",
           background: "#089",
@@ -38,7 +38,13 @@ function App() {
           boxShadow: "0 0.5rem 1.5rem rgba(0, 0, 0, 0.3)",
         }}
       >
-        <span style={{ fontSize: "1.3rem" }}>↑</span>
+        <span
+          style={{
+            fontSize: "1.5rem",
+          }}
+        >
+          ↑
+        </span>
       </ScrollToTop>
       <Layout>
         <Switch>

@@ -9,7 +9,8 @@ const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  font-family: sans-serif;
 
   span {
     font-style: italic;
@@ -23,16 +24,17 @@ const MainWrapper = styled.div`
 
   p {
     font-size: 1.3rem;
-    font-family: "Montserrat Alternates";
-    font-style: italic;
+    font-family: sans-serif;
   }
 
   .skill-stack {
     font-weight: bold;
+    font-family: "Montserrat Alternates";
   }
 
   .skills {
     font-size: 1rem;
+    font-family: "Montserrat Alternates";
     font-weight: bold;
     color: #089;
   }

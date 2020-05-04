@@ -10,7 +10,7 @@ import GlobalStyle from "../components/global";
 
 const Style = styled.div`
   display: flex;
-  letter-spacing: 0.15rem;
+  ${"" /* letter-spacing: 0rem; */}
   flex-direction: row;
 
   background-color: ${(props) =>
@@ -23,7 +23,7 @@ const Style = styled.div`
 
   transition: 0.2s ease-in-out;
 
-  font-family: "IBM Plex Mono", monospace;
+  font-family: sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;
