@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SliderView from "../SliderView";
 import { FaLink } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 import port1 from "./../../assets/images/port1.jpeg";
 import port2 from "./../../assets/images/port2.jpeg";
@@ -12,6 +13,7 @@ import srmth3 from "./../../assets/images/srmth3.jpeg";
 import beach1 from "./../../assets/images/beach1.jpeg";
 import beach2 from "./../../assets/images/beach2.jpeg";
 import beach3 from "./../../assets/images/beach3.jpeg";
+import bgImage from "./../../assets/images/lol.svg";
 
 const Wrapper = styled.div`
   padding-top: 7rem;
@@ -19,7 +21,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   text-align: center;
   margin: 0;
-  font-family: "Montserrat Alternates";
+  font-family: "Montserrat Alternates", sans-serif;
+  background-image: url(${bgImage});
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
 
   h2 {
     color: #089;
@@ -113,6 +119,14 @@ const Wrapper = styled.div`
 function Projects() {
   return (
     <Wrapper>
+      <Helmet>
+        <title>Vivek Mittal | Projects</title>
+        <meta
+          name="description"
+          content="This page contains all the projects done by Vivek Mittal"
+        />
+      </Helmet>
+
       <h2>PROJECTS</h2>
       <hr />
       <hr />

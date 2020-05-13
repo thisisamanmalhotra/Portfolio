@@ -3,6 +3,7 @@ import ReactGA from "react-ga";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 import error from "../../assets/images/not-found.svg";
 
@@ -26,7 +27,7 @@ const MainWrapper = styled.section`
     text-transform: uppercase;
     text-shadow: 0 0 0.15em #000;
     white-space: nowrap;
-    font-family: "Montserrat Alternates";
+    font-family: "Montserrat Alternates", sans-serif;
     filter: blur(0.007em);
     animation: shake 2.5s linear forwards;
   }
@@ -192,6 +193,11 @@ function NoMatch() {
 
   return (
     <MainWrapper>
+      <Helmet>
+        <title>Vivek Mittal | Error</title>
+        <meta name="description" content="Page not found" />
+      </Helmet>
+
       <h1 data-text="Page Not Found!">
         <span>Page Not Found!</span>
       </h1>

@@ -22,7 +22,7 @@ const Style = styled.section`
 
   a:hover {
     color: #089;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 
   .col1 {

@@ -10,7 +10,6 @@ import GlobalStyle from "../components/global";
 
 const Style = styled.div`
   display: flex;
-  ${"" /* letter-spacing: 0rem; */}
   flex-direction: row;
 
   background-color: ${(props) =>
@@ -38,6 +37,10 @@ const Style = styled.div`
     height: 100%;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .unordered li {
+    letter-spacing: 0.25rem;
   }
 
   .column1 {

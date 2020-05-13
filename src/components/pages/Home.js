@@ -1,17 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 import Card from "./Card";
 import vivek from "./../../assets/images/vivek.jpg";
 import resume from "./../../assets/Resume.pdf";
+import bgImage from "./../../assets/images/lol.svg";
 
-const Main = styled.div`
+const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
   justify-content: center;
   align-items: center;
   margin: 0;
+  background-image: url(${bgImage});
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
 
   .row {
     height: 80vh;
@@ -62,9 +68,9 @@ const Main = styled.div`
   }
 
   .col2 img {
-    border: 2px solid #fff;
-    box-shadow: 0px 6px 5px #ccc;
-    border-radius: 190px;
+    border: 1px solid #c2c2c2;
+    box-shadow: 0px 3px 3px #c2c2c2;
+    border-radius: 50%;
   }
 
   .change-content:after {
@@ -158,7 +164,15 @@ const Main = styled.div`
 
 const Home = () => {
   return (
-    <Main>
+    <MainWrapper>
+      <Helmet>
+        <title>Vivek Mittal | Software Developer</title>
+        <meta
+          name="description"
+          content="This is the homepage for Vivek Mittal"
+        />
+      </Helmet>
+
       <div className="row">
         <div className="container">
           <div className="col1">
@@ -188,7 +202,7 @@ const Home = () => {
         </div>
       </div>
       <Card />
-    </Main>
+    </MainWrapper>
   );
 };
 

@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
+
+import bgImage from "./../../assets/images/lol.svg";
 
 const MainWrapper = styled.div`
   display: flex;
@@ -11,6 +14,10 @@ const MainWrapper = styled.div`
   text-align: center;
   line-height: 2rem;
   font-family: sans-serif;
+  background-image: url(${bgImage});
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
 
   span {
     font-style: italic;
@@ -50,6 +57,11 @@ function About() {
 
   return (
     <MainWrapper>
+      <Helmet>
+        <title>Vivek Mittal | About</title>
+        <meta name="description" content="This page tells about Vivek Mittal" />
+      </Helmet>
+
       <h2>ABOUT ME</h2>
       <br />
       <h5>

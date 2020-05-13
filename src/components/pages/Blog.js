@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
+
+import bgImage from "./../../assets/images/lol.svg";
 
 const MainWrapper = styled.section`
   display: flex;
@@ -9,6 +12,10 @@ const MainWrapper = styled.section`
   align-items: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  background-image: url(${bgImage});
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
 
   h2 {
     color: #089;
@@ -91,6 +98,14 @@ const MainWrapper = styled.section`
 
 const Blog = () => (
   <MainWrapper>
+    <Helmet>
+      <title>Vivek Mittal | Blogs</title>
+      <meta
+        name="description"
+        content="This page contains all the blogs written by Vivek Mittal"
+      />
+    </Helmet>
+
     <h2>BLOGS</h2>
     <hr />
     <hr />

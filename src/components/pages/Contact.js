@@ -1,18 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 
-const Style = styled.div`
+import vectorbg from "./../../assets/images/lol.svg";
+
+const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  height: 75vh;
+  height: 100vh;
+  background-image: url(${vectorbg});
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 
   h2 {
     color: #089;
     font-weight: bold;
+    letter-spacing: 0.25rem;
   }
 
   span {
@@ -44,7 +52,15 @@ function Contact() {
   initializeReactGA();
 
   return (
-    <Style>
+    <MainWrapper>
+      <Helmet>
+        <title>Vivek Mittal | Contact</title>
+        <meta
+          name="description"
+          content="This page contains the contact details of Vivek Mittal"
+        />
+      </Helmet>
+
       <h2>CONTACT ME</h2>
       <br />
       <br />
@@ -59,7 +75,7 @@ function Contact() {
       <a href="mailto: vivekmittal199@gmail.com" className="lmao">
         vivekmittal199@gmail.com
       </a>
-    </Style>
+    </MainWrapper>
   );
 }
 
