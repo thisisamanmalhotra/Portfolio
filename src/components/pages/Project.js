@@ -31,6 +31,7 @@ const Wrapper = styled.div`
     color: #089;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
+    letter-spacing: 0.25rem;
   }
 
   .col1,

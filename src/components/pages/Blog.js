@@ -20,6 +20,7 @@ const MainWrapper = styled.section`
   h2 {
     color: #089;
     font-weight: bold;
+    letter-spacing: 0.25rem;
   }
 
   .blog-title {

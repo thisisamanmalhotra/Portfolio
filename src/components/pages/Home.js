@@ -6,11 +6,12 @@ import Card from "./Card";
 import vivek from "./../../assets/images/vivek.jpg";
 import resume from "./../../assets/Resume.pdf";
 import bgImage from "./../../assets/images/lol.svg";
+import ampersand from "./../../assets/images/ampersand.svg";
 
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 10rem;
+  padding-top: 8rem;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -19,12 +20,23 @@ const MainWrapper = styled.div`
   background-position: top;
   background-size: contain;
 
+  .design-code {
+    color: #089;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "IBM Plex Mono", sans-serif;
+
+    img {
+      vertical-align: baseline;
+    }
+  }
+
   .row {
     height: 80vh;
   }
 
   h1 {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "IBM Plex Mono", sans-serif;
     font-weight: bold;
   }
 
@@ -49,6 +61,8 @@ const MainWrapper = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
+    letter-spacing: 0.1rem;
+    line-height: 5rem;
   }
 
   .col2 {
@@ -166,7 +180,7 @@ const Home = () => {
   return (
     <MainWrapper>
       <Helmet>
-        <title>Vivek Mittal | Software Developer</title>
+        <title>Vivek Mittal | Web Developer</title>
         <meta
           name="description"
           content="This is the homepage for Vivek Mittal"
@@ -183,13 +197,17 @@ const Home = () => {
             <h1>
               India <span className="span2">IN</span>
             </h1>
-            <br />
-            <br />
+
+            <p className="design-code">
+              I Design <img src={ampersand} alt="&" /> Code.
+            </p>
+
             <p>
               A <span className="change-content"></span> Full-Stack Developer!
             </p>
           </div>
         </div>
+
         <div className="col2">
           <img src={vivek} alt="Vivek" width="308px" height="308px" />
         </div>
