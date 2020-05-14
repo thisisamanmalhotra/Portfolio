@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
 import Card from "./Card";
-import vivek from "./../../assets/images/vivek.jpg";
+import vivek from "./../../assets/images/vivek.svg";
 import resume from "./../../assets/Resume.pdf";
 import ampersand from "./../../assets/images/ampersand.svg";
 import bgImage from "./../../assets/images/bg.svg";
@@ -71,7 +71,7 @@ const MainWrapper = styled.div`
     justify-content: flex-end;
   }
 
-  @media (max-width: 775px) {
+  @media (max-width: 1000px) {
     .col2 {
       display: none;
     }
@@ -82,6 +82,16 @@ const MainWrapper = styled.div`
 
     .design-code {
       font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .row {
+      margin-bottom: 5rem;
     }
   }
 
@@ -197,9 +207,9 @@ const Home = () => {
             <h1>
               Hi! 👋 I'm <span className="span1">Vivek</span>
             </h1>
-            <h1>a Developer based in Chennai</h1>
             <h1>
-              India <span className="span2">IN</span>
+              a Developer based in Chennai, India
+              <span className="span2"> IN</span>
             </h1>
 
             <p className="design-code">

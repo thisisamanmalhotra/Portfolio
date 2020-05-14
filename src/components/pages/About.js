@@ -18,10 +18,17 @@ const MainWrapper = styled.div`
     font-weight: bold;
   }
 
-  h2 {
-    color: #089;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
+  .title {
+    transform: skew(-3deg, -3deg);
+    box-shadow: 3px 3px 3px #888888;
+    background: #089;
+    padding: 0.4rem;
+
+    h2 {
+      font-weight: bold;
+      color: #fff !important;
+      letter-spacing: 0.1rem;
+    }
   }
 
   p {
@@ -60,7 +67,9 @@ function About() {
         />
       </Helmet>
 
-      <h2>ABOUT ME</h2>
+      <div className="title">
+        <h2>About Me</h2>
+      </div>
       <br />
       <p>
         If you're <span>wondering</span> who <span>I am ...</span>

@@ -11,10 +11,17 @@ const MainWrapper = styled.div`
   font-family: "Montserrat", sans-serif;
   height: 100vh;
 
-  h2 {
-    color: #089;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
+  .title {
+    transform: skew(-3deg, -3deg);
+    box-shadow: 3px 3px 3px #888888;
+    background: #089;
+    padding: 0.4rem;
+
+    h2 {
+      font-weight: bold;
+      color: #fff !important;
+      letter-spacing: 0.1rem;
+    }
   }
 
   span {
@@ -55,7 +62,10 @@ function Contact() {
         />
       </Helmet>
 
-      <h2>CONTACT ME</h2>
+      <div className="title">
+        <h2>Contact Me</h2>
+      </div>
+
       <br />
       <br />
       <br />
