@@ -9,7 +9,7 @@ const MainWrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   h2 {
     color: #089;
@@ -19,13 +19,13 @@ const MainWrapper = styled.section`
 
   .blog-title {
     font-size: 1.5rem;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 2rem;
   }
 
   .blog-desc {
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 2.5rem;
     padding-bottom: 2rem;
@@ -55,7 +55,7 @@ const MainWrapper = styled.section`
     padding-right:0;
     transition:padding-right 0.5s;
     color:#089;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
 

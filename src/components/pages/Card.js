@@ -8,8 +8,8 @@ const MainWrapper = styled.section`
   flex-wrap: wrap;
   padding: 3rem;
   width: 90%;
-
-  font-family: "Montserrat Alternates";
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
 
   .card {
     display: flex;
@@ -38,7 +38,7 @@ const MainWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Montserrat", sans-serif;
     flex: 2;
     font-size: 1.2rem;
     width: 80%;

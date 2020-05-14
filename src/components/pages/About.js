@@ -11,7 +11,7 @@ const MainWrapper = styled.div`
   align-items: center;
   text-align: center;
   line-height: 2rem;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   span {
     font-style: italic;
@@ -26,8 +26,8 @@ const MainWrapper = styled.div`
 
   p {
     font-size: 1.2rem;
-    font-family: "Montserrat Alternates";
-    letter-spacing: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
     line-height: 3rem;
   }
 

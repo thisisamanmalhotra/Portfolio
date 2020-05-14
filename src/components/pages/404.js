@@ -16,7 +16,7 @@ const MainWrapper = styled.section`
   padding-bottom: 0.5rem;
   height: 100%;
   width: 100%;
-  font-family: "Montserrat Alternates";
+  font-family: "Montserrat", sans-serif;
 
   h1 {
     font-size: 2.5rem;
@@ -27,7 +27,7 @@ const MainWrapper = styled.section`
     text-transform: uppercase;
     text-shadow: 0 0 0.15em #000;
     white-space: nowrap;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Montserrat", sans-serif;
     filter: blur(0.007em);
     animation: shake 2.5s linear forwards;
   }

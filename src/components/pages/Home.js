@@ -6,6 +6,7 @@ import Card from "./Card";
 import vivek from "./../../assets/images/vivek.jpg";
 import resume from "./../../assets/Resume.pdf";
 import ampersand from "./../../assets/images/ampersand.svg";
+import bgImage from "./../../assets/images/bg.svg";
 
 const MainWrapper = styled.div`
   display: flex;
@@ -14,12 +15,16 @@ const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0;
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
   
   .design-code {
     color: #089;
     font-size: 2rem;
     font-weight: bold;
-    font-family: "IBM Plex Mono", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     img {
       vertical-align: baseline;
@@ -49,7 +54,7 @@ const MainWrapper = styled.div`
 
   p {
     font-size: 1.2rem;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .col1 {
@@ -139,7 +144,7 @@ const MainWrapper = styled.div`
     padding-right:0;
     transition:padding-right 0.5s;
     color:#089;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
 

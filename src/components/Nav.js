@@ -22,7 +22,7 @@ const Style = styled.div`
 
   transition: 0.2s ease-in-out;
 
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;
@@ -40,7 +40,7 @@ const Style = styled.div`
   }
 
   .unordered li {
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.1rem;
   }
 
   .column1 {

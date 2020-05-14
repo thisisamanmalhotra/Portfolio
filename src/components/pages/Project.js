@@ -20,13 +20,22 @@ const Wrapper = styled.div`
   flex-direction: column;
   text-align: center;
   margin: 0;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   h2 {
     color: #089;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     letter-spacing: 0.25rem;
+  }
+
+  .icon {
+    margin-right: 0.5rem;
+  }
+
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
   }
 
   .col1,
@@ -38,7 +47,7 @@ const Wrapper = styled.div`
     padding: 3rem;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat Alternates";
+    font-family: "Montserrat", sans-serif;
   }
 
   .row {
@@ -52,7 +61,7 @@ const Wrapper = styled.div`
   }
 
   .btn:hover {
-    animation: jump 1s ease 0s normal;
+    animation: jump 0.8s ease-in-out;
   }
 
   @keyframes jump {
@@ -133,11 +142,7 @@ function Projects() {
             <SliderView img1={port1} img2={port2} img3={port3} />
           </div>
           <div className="col2">
-            <p>
-              This very site you're watching right now. I wanted something fast
-              and with good SEO for my portfolio. It is a static website and it
-              is easy for me to keep adding portfolio items in it.
-            </p>
+            <p>This very site you're watching right now.</p>
             <br />
             <p className="skills">REACTJS - STYLED COMPONENTS</p>
             <button className="btn">
