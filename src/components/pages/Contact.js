@@ -3,8 +3,6 @@ import styled from "styled-components";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
 
-import vectorbg from "./../../assets/images/lol.svg";
-
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,10 +10,6 @@ const MainWrapper = styled.div`
   align-items: center;
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  background-image: url(${vectorbg});
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
 
   h2 {
     color: #089;

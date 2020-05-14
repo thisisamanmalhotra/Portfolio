@@ -13,7 +13,6 @@ import srmth3 from "./../../assets/images/srmth3.jpeg";
 import beach1 from "./../../assets/images/beach1.jpeg";
 import beach2 from "./../../assets/images/beach2.jpeg";
 import beach3 from "./../../assets/images/beach3.jpeg";
-import bgImage from "./../../assets/images/lol.svg";
 
 const Wrapper = styled.div`
   padding-top: 7rem;
@@ -22,10 +21,6 @@ const Wrapper = styled.div`
   text-align: center;
   margin: 0;
   font-family: "Montserrat Alternates", sans-serif;
-  background-image: url(${bgImage});
-  background-repeat: repeat-y;
-  background-position: top;
-  background-size: contain;
 
   h2 {
     color: #089;

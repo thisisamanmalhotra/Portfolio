@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 
-import bgImage from "./../../assets/images/lol.svg";
-
 const MainWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -12,10 +10,6 @@ const MainWrapper = styled.section`
   align-items: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background-image: url(${bgImage});
-  background-repeat: repeat-y;
-  background-position: top;
-  background-size: contain;
 
   h2 {
     color: #089;

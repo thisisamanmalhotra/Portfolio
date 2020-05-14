@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import storage from "local-storage-fallback";
 import { NavLink } from "react-router-dom";
 
-import logo from "./../assets/images/logo.png";
+import logo from "./../assets/images/logo.svg";
 import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
 import { ReactComponent as MoonIcon } from "./../assets/images/moon.svg";
 import GlobalStyle from "../components/global";
@@ -22,7 +22,7 @@ const Style = styled.div`
 
   transition: 0.2s ease-in-out;
 
-  font-family: sans-serif;
+  font-family: Montserrat;
   font-size: 0.8rem;
   font-weight: bold;
   width: 100%;

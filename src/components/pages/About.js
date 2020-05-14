@@ -3,8 +3,6 @@ import styled from "styled-components";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
 
-import bgImage from "./../../assets/images/lol.svg";
-
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,10 +12,6 @@ const MainWrapper = styled.div`
   text-align: center;
   line-height: 2rem;
   font-family: sans-serif;
-  background-image: url(${bgImage});
-  background-repeat: repeat-y;
-  background-position: top;
-  background-size: contain;
 
   span {
     font-style: italic;
@@ -31,18 +25,18 @@ const MainWrapper = styled.div`
   }
 
   p {
-    font-size: 1.3rem;
-    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-family: "Montserrat Alternates";
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
   }
 
   .skill-stack {
     font-weight: bold;
-    font-family: "Montserrat Alternates";
   }
 
   .skills {
     font-size: 1rem;
-    font-family: "Montserrat Alternates";
     font-weight: bold;
     color: #089;
   }
@@ -60,40 +54,50 @@ function About() {
     <MainWrapper>
       <Helmet>
         <title>Vivek Mittal | About</title>
-        <meta name="description" content="This page tells about Vivek Mittal" />
+        <meta
+          name="description"
+          content="This page contains information about Vivek Mittal"
+        />
       </Helmet>
 
       <h2>ABOUT ME</h2>
       <br />
-      <h5>
+      <p>
         If you're <span>wondering</span> who <span>I am ...</span>
-      </h5>
+      </p>
       <br />
       <br />
       <p>
-        I'm Vivek, a 20 year old, Self-taught Full-Stack Developer from India.
+        I'm Vivek, a 20 year old, Self-taught designer and coder from India.
       </p>
       <p>
         I'm a 3rd year student current completing my Bachelors in Computer
-        Science.
+        Science from SRM Institute Of Science and Technology.
       </p>
       <p>
-        I took CSE because everybody told me there is so much scope in it just
-        like PCM. It was first time since I started coding in C programming
-        language and it was a very rough semester for me.
+        I started learning coding when I came to college. I struggled through my
+        1st semester and was introduced with the C programming language.
       </p>
       <p>
         I found it very difficult to understand. Then one day I woke up and
         thought about starting from the basics. So I started with the HTML and
-        CSS and then I moved on with the basic JavaScript.
+        CSS and then I moved on with JavaScript.
       </p>
       <p>
-        I started developing an interest in JavaScript and it was then I got
+        I started developing an interest in JavaScript and at that moment I got
         myself clear that I would like to continue my journey ahead with
         JavaScript. During this time I took a few courses and watched a
         countless number of YouTube videos.
       </p>
-
+      <p>
+        I dream of creating my course someday to help others learn the modern
+        trends in Computer Science and thinking of starting from the YouTube
+        which is a great platform to start.
+      </p>
+      <p>
+        I like to cook and play Clash of Clans & PUBG in my free time (I am
+        quiet good at them 😜).
+      </p>
       <p>
         I always want to learn more, do more, and be more. I’m also a firm
         believer that we should never settle.
@@ -109,8 +113,8 @@ function About() {
       </p>
       <br />
       <p className="skills">
-        HTML5 - CSS3 - JAVASCRIPT - MONGODB - EXPRESSJS - REACTJS - NODEJS -
-        STYLED COMPONENTS - FIGMA - GITHUB - CONTENTFUL - MYSQL
+        HTML5 - CSS3 - JAVASCRIPT - MONGODB - REACTJS - NODEJS - STYLED
+        COMPONENTS - FIGMA - GITHUB - CONTENTFUL - MYSQL - REACT NATIVE
       </p>
     </MainWrapper>
   );

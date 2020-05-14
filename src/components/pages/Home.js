@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import Card from "./Card";
 import vivek from "./../../assets/images/vivek.jpg";
 import resume from "./../../assets/Resume.pdf";
-import bgImage from "./../../assets/images/lol.svg";
 import ampersand from "./../../assets/images/ampersand.svg";
 
 const MainWrapper = styled.div`
@@ -15,14 +14,10 @@ const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url(${bgImage});
-  background-repeat: repeat-y;
-  background-position: top;
-  background-size: contain;
-
+  
   .design-code {
     color: #089;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: "IBM Plex Mono", sans-serif;
 
@@ -78,6 +73,10 @@ const MainWrapper = styled.div`
 
     .container {
       width: 100%;
+    }
+
+    .design-code {
+      font-size: 1.5rem;
     }
   }
 
