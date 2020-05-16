@@ -74,11 +74,31 @@ const MainWrapper = styled.section`
       flex: 50%;
     }
   }
+
+  .crd1 {
+    animation: crdEffect1 1.5s ease;
+  }
+
+  .crd2 {
+    animation: crdEffect2 1.5s ease;
+  }
+
+  @keyframes crdEffect1 {
+    0% {
+      transform: translate(-30px, -30px);
+    }
+  }
+
+  @keyframes crdEffect2 {
+    0% {
+      transform: translate(30px, 30px);
+    }
+  }
 `;
 
 const Card = () => (
   <MainWrapper>
-    <div className="card">
+    <div className="card crd1">
       <div className="heading">
         <Link to="/projects">PROJECTS</Link>
       </div>
@@ -87,7 +107,7 @@ const Card = () => (
         Collection of all my projects done so far open source and professional.
       </div>
     </div>
-    <div className="card">
+    <div className="card crd2">
       <div className="heading">
         <Link to="/blog">BLOGS</Link>
       </div>

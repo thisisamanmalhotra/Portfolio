@@ -24,7 +24,6 @@ const Wrapper = styled.div`
 
   h2 {
     color: #089;
-    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     letter-spacing: 0.25rem;
   }
@@ -38,16 +37,29 @@ const Wrapper = styled.div`
     line-height: 2rem;
   }
 
-  .col1,
-  .col2 {
+  .col1 {
     width: 50%;
+    animation: column1 1s ease;
+  }
+
+  @keyframes column1 {
+    0% {
+      transform: translate(20px, -20px);
+    }
   }
 
   .col2 {
     padding: 3rem;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    animation: column2 1s ease;
+  }
+
+  @keyframes column2 {
+    0% {
+      transform: translateX(20px);
+    }
   }
 
   .row {
@@ -89,6 +101,13 @@ const Wrapper = styled.div`
   .heading {
     font-size: 1.7rem;
     font-weight: bold;
+    animation: heading 1s ease;
+  }
+
+  @keyframes heading {
+    0% {
+      transform: translateX(-20px);
+    }
   }
 
   .skills {

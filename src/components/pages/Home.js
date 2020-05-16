@@ -19,7 +19,13 @@ const MainWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+  animation: homePg 3s;
   
+  @keyframes homePg {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
   .design-code {
     color: #089;
     font-size: 2rem;
@@ -63,12 +69,28 @@ const MainWrapper = styled.div`
     flex: 1;
     letter-spacing: 0.1rem;
     line-height: 5rem;
+    animation: column1 1s ease;
+  }
+
+  @keyframes column1 {
+    0% {
+      transform: translate(-30px, -30px);
+      opacity: 0;
+    }
   }
 
   .col2 {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+    animation: column2 1s ease;
+  }
+
+  @keyframes column2 {
+    0% {
+      transform: translate(30px, 30px);
+      opacity: 0;
+    }
   }
 
   @media (max-width: 1000px) {
@@ -103,20 +125,20 @@ const MainWrapper = styled.div`
 
   .change-content:after {
     content: "";
-    animation: changeText 6s infinite linear;
+    animation: changeText 4s infinite ease;
     font-style: italic;
     font-weight: bold;
     color: #089;
   }
 
   @keyframes changeText {
-    0% {
+    0%, 100% {
       content: "Passionate";
     }
-    50% {
+    40% {
       content: "Committed";
     }
-    100% {
+    80% {
       content: "Self-taught";
     }
   }
@@ -127,6 +149,14 @@ const MainWrapper = styled.div`
     flex-basis: 100%;
     justify-content: center;
     align-items: center;
+    animation: column3 1s ease;
+  }
+
+  @keyframes column3 {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
   }
 
   .btn {
@@ -225,6 +255,7 @@ const Home = () => {
         <div className="col2">
           <img src={vivek} alt="Vivek" width="308px" height="308px" />
         </div>
+
         <div className="col3">
           <button className="btn">
             <a href={resume} target="_blank" rel="noopener noreferrer">

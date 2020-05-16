@@ -16,6 +16,7 @@ const MainWrapper = styled.section`
     box-shadow: 3px 3px 3px #888888;
     background: #089;
     padding: 0.4rem;
+    animation: title 1s ease;
 
     h2 {
       font-weight: bold;
@@ -24,11 +25,24 @@ const MainWrapper = styled.section`
     }
   }
 
+  @keyframes title {
+    0% {
+      transform: translate(20px, 20px);
+    }
+  }
+
   .blog-title {
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 2rem;
+    animation: blog-title 1s ease;
+  }
+
+   @keyframes blog-title {
+    0% {
+      transform: translateX(-30px);
+    }
   }
 
   .blog-desc {
@@ -36,6 +50,13 @@ const MainWrapper = styled.section`
     font-size: 1.2rem;
     line-height: 2.5rem;
     padding-bottom: 2rem;
+    animation: blog-desc 1s ease;
+  }
+
+  @keyframes blog-desc {
+    0% {
+      transform: translateX(30px);
+    }
   }
 
   .btn {

@@ -16,11 +16,18 @@ const MainWrapper = styled.div`
     box-shadow: 3px 3px 3px #888888;
     background: #089;
     padding: 0.4rem;
+    animation: title 1s ease;
 
     h2 {
       font-weight: bold;
       color: #fff !important;
       letter-spacing: 0.1rem;
+    }
+  }
+
+  @keyframes title {
+    0% {
+      transform: translate(20px, 20px);
     }
   }
 
@@ -31,10 +38,18 @@ const MainWrapper = styled.div`
 
   p {
     font-size: 1.5rem;
+    animation: para 1s ease;
+  }
+
+  @keyframes para {
+    0% {
+      transform: translateX(-10px);
+    }
   }
 
   a {
     font-weight: bold;
+    animation: para 1s ease;
   }
 
   a:hover {

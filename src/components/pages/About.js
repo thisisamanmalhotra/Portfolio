@@ -23,6 +23,7 @@ const MainWrapper = styled.div`
     box-shadow: 3px 3px 3px #888888;
     background: #089;
     padding: 0.4rem;
+    animation: title 1s ease;
 
     h2 {
       font-weight: bold;
@@ -31,11 +32,24 @@ const MainWrapper = styled.div`
     }
   }
 
+  @keyframes title {
+    0% {
+      transform: translate(20px, 20px);
+    }
+  }
+
   p {
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1rem;
     line-height: 3rem;
+    animation: para 1s ease;
+  }
+
+  @keyframes para {
+    0% {
+      transform: translateX(-10px);
+    }
   }
 
   .skill-stack {

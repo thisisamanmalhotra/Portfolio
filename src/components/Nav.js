@@ -116,6 +116,46 @@ const Style = styled.div`
       }
     }
   }
+
+  li {
+    animation: animate 1.5s ease;
+  }
+
+  li:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  li:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  li:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(-150px);
+    }
+
+    40% {
+      transform: translateY(0);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  ${"" /* @keyframes animate {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+  } */}
 `;
 
 const getInitialTheme = () => {
