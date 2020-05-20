@@ -82,7 +82,7 @@ const Footer = () => (
       </a>
     </div>
     <div className="col2">
-      <p>© Copyright 2020.</p>
+      <p>© Copyright {new Date().getFullYear().toString()}.</p>
       <p>All Rights Reserved.</p>
     </div>
   </Style>

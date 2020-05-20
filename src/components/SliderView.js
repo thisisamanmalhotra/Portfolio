@@ -21,7 +21,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function SliderView({ img1, img2, img3 }) {
+function SliderView({ img1, img2, img3 }) {
   return (
     <Wrapper>
       <Slider {...settings}>
@@ -38,3 +38,5 @@ export default function SliderView({ img1, img2, img3 }) {
     </Wrapper>
   );
 }
+
+export default SliderView;

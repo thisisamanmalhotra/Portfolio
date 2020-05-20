@@ -1,11 +1,11 @@
 import React from "react";
 import ReactGA from "react-ga";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 import error from "../../assets/images/not-found.svg";
+import Button2 from "../Button2";
 
 const MainWrapper = styled.section`
   display: flex;
@@ -135,43 +135,6 @@ const MainWrapper = styled.section`
     height: 30%;
   }
 
-  button {
-    margin: 3rem 0;
-    border-radius: 24px;
-    border: 0;
-    background: #089;
-  }
-
-  .btn {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .icon {
-    color: #fff;
-  }
-
-  button:hover {
-    animation: jump 1.5s ease 0s normal;
-  }
-
-  @keyframes jump {
-    0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-    }
-  }
-
   @media (max-width: 450px) {
     h1 {
       font-size: 2rem;
@@ -180,6 +143,10 @@ const MainWrapper = styled.section`
     p {
       font-size: 0.8rem;
     }
+  }
+
+  button {
+    margin: 3rem 0;
   }
 `;
 
@@ -194,7 +161,7 @@ function NoMatch() {
   return (
     <MainWrapper>
       <Helmet>
-        <title>Vivek Mittal | Error</title>
+        <title>Vivek Mittal | Not Found</title>
         <meta name="description" content="Page not found" />
       </Helmet>
 
@@ -203,12 +170,7 @@ function NoMatch() {
       </h1>
       <p>The page you're trying to reach does not exists.</p>
       <img src={error} alt="Error 404" />
-      <button>
-        <FaHome className="icon" />
-        <Link to="/" className="btn">
-          Go Home
-        </Link>
-      </button>
+      <Button2 link="/" icon={<FaHome className="icon" />} text="Go Home" />
     </MainWrapper>
   );
 }

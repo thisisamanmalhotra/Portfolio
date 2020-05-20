@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SliderView from "../SliderView";
+import ReactGA from "react-ga";
 import { FaLink } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
@@ -13,8 +14,9 @@ import srmth3 from "./../../assets/images/srmth3.jpeg";
 import beach1 from "./../../assets/images/beach1.jpeg";
 import beach2 from "./../../assets/images/beach2.jpeg";
 import beach3 from "./../../assets/images/beach3.jpeg";
+import Button2 from "../Button2";
 
-const Wrapper = styled.div`
+const MainWrapper = styled.div`
   padding-top: 7rem;
   display: flex;
   flex-direction: column;
@@ -26,10 +28,6 @@ const Wrapper = styled.div`
     color: #089;
     font-weight: bold;
     letter-spacing: 0.25rem;
-  }
-
-  .icon {
-    margin-right: 0.5rem;
   }
 
   p {
@@ -64,38 +62,6 @@ const Wrapper = styled.div`
 
   .row {
     padding: 2rem;
-  }
-
-  .btn {
-    border: 0;
-    border-radius: 20px;
-    background: #089;
-  }
-
-  .btn:hover {
-    animation: jump 0.8s ease-in-out;
-  }
-
-  @keyframes jump {
-    0% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-    50% {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-    }
-  }
-
-  .btn a {
-    color: #fff;
-    font-size: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
   }
 
   .heading {
@@ -140,9 +106,16 @@ const Wrapper = styled.div`
   }
 `;
 
+function initializeReactGA() {
+  ReactGA.initialize("UA-159444607-1");
+  ReactGA.pageview("/project");
+}
+
 function Projects() {
+  initializeReactGA();
+
   return (
-    <Wrapper>
+    <MainWrapper>
       <Helmet>
         <title>Vivek Mittal | Projects</title>
         <meta
@@ -164,12 +137,7 @@ function Projects() {
             <p>This very site you're watching right now.</p>
             <br />
             <p className="skills">REACTJS - STYLED COMPONENTS</p>
-            <button className="btn">
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                <FaLink className="icon" />
-                VISIT
-              </a>
-            </button>
+            <Button2 link="/" icon={<FaLink className="icon" />} text="VISIT" />
           </div>
         </div>
       </div>
@@ -188,16 +156,11 @@ function Projects() {
             </p>
             <br />
             <p className="skills">REACTJS - CONTENTFUL CMS</p>
-            <button className="btn">
-              <a
-                href="https://resort.ga"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLink className="icon" />
-                VISIT
-              </a>
-            </button>
+            <Button2
+              link="https://resort.ga"
+              icon={<FaLink className="icon" />}
+              text="VISIT"
+            />
           </div>
           <div className="col1">
             <SliderView img1={beach1} img2={beach2} img3={beach3} />
@@ -222,23 +185,18 @@ function Projects() {
             </p>
             <br />
             <p className="skills">HTML5 - CSS3 - VANILLA JAVASCRIPT</p>
-            <button className="btn">
-              <a
-                href="https://srmth.in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLink className="icon" />
-                VISIT
-              </a>
-            </button>
+            <Button2
+              link="https://srmth.in"
+              icon={<FaLink className="icon" />}
+              text="VISIT"
+            />
           </div>
         </div>
       </div>
 
       <hr />
       <hr />
-    </Wrapper>
+    </MainWrapper>
   );
 }
 
