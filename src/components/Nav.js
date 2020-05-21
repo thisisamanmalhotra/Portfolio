@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import storage from "local-storage-fallback";
 import { NavLink } from "react-router-dom";
 
-import logo from "./../assets/images/logo.svg";
+import logo1 from "./../assets/images/logo1.svg";
 import { ReactComponent as SunIcon } from "./../assets/images/sun.svg";
 import { ReactComponent as MoonIcon } from "./../assets/images/moon.svg";
 import GlobalStyle from "../components/global";
@@ -67,11 +67,16 @@ const Style = styled.div`
 
   @media (max-width: 700px) {
     .column1 {
-      width: 25%;
+      width: 20%;
     }
 
     .column2 {
-      width: 75%;
+      width: 80%;
+    }
+
+    img {
+      margin-left: 0.8rem;
+      width: 80px;
     }
   }
 
@@ -172,7 +177,7 @@ const Nav = () => {
           <div className="row">
             <div className="column1">
               <NavLink exact to="/">
-                <img src={logo} width="60" height="50" alt="Vivek" />
+                <img src={logo1} width="150" height="50" alt="Vivek" />
               </NavLink>
             </div>
             <div className="column2">

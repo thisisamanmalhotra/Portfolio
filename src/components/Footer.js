@@ -29,7 +29,7 @@ const Style = styled.section`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 2rem;
   }
 
@@ -82,8 +82,7 @@ const Footer = () => (
       </a>
     </div>
     <div className="col2">
-      <p>© Copyright {new Date().getFullYear().toString()}.</p>
-      <p>All Rights Reserved.</p>
+      <p>© {new Date().getFullYear().toString()} Vivek Mittal</p>
     </div>
   </Style>
 );
