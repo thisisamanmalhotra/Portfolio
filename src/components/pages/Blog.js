@@ -28,6 +28,10 @@ const MainWrapper = styled.section`
     }
   }
 
+  .blog {
+    margin-bottom: 5rem;
+  }
+
   @keyframes title {
     0% {
       transform: translate(20px, 20px);
@@ -86,16 +90,33 @@ function Blog() {
       </div>
       <hr />
       <hr />
-      <p className="blog-title">1. AJAX 4 Way Requests</p>
-      <p className="blog-desc">
-        Whenever it comes to choosing which AJAX method to use for sending the
-        requests, developers gets pretty confused. There was not much content
-        about which method to use, so I wrote up this blog.
-      </p>
-      <Button
-        link="https://medium.com/@vivekmittal199/ajax-4-way-requests-a9dd5531093e"
-        text="Link to Blog"
-      />
+
+      <div className="blog">
+        <p className="blog-title">1. AJAX 4 Way Requests</p>
+        <p className="blog-desc">
+          Whenever it comes to choosing which AJAX method to use for sending the
+          requests, developers gets pretty confused. There was not much content
+          about which method to use, so I wrote up this blog.
+        </p>
+        <Button
+          link="https://medium.com/@vivekmittal199/ajax-4-way-requests-a9dd5531093e"
+          text="Link"
+        />
+      </div>
+
+      <div className="blog">
+        <p className="blog-title">
+          2. Create POKEMON DECK using HTML5, CSS3, Vanilla JavaScript
+        </p>
+        <p className="blog-desc">
+          A simple yet interesting small project. I took a little detour and
+          wanted to refresh my mind as well as help others, so wrote this up.
+        </p>
+        <Button
+          link="https://medium.com/@vivekmittal199/create-a-pokedex-using-html5-css3-and-vanilla-javascript-d367681cc63d?source=friends_link&sk=7175403a83dc94d856728d8aebaf0e92"
+          text="Link"
+        />
+      </div>
     </MainWrapper>
   );
 }

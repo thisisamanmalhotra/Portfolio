@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaCode,
+  FaCodepen,
+} from "react-icons/fa";
 
 const Style = styled.section`
   display: flex;
@@ -55,6 +62,14 @@ const Footer = () => (
         className="a"
       >
         <FaGithub />
+      </a>
+      <a
+        href="https://codepen.io/vivek-mittal/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="a"
+      >
+        <FaCodepen />
       </a>
       <a
         href="https://www.linkedin.com/in/vivek-mittal/"

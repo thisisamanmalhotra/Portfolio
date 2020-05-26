@@ -7,6 +7,7 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Error from "./components/pages/404";
+// import Thankyou from "./components/pages/Thankyou";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -53,6 +54,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects" component={Project} />
           <Route exact path="/blog" component={Blog} />
+          {/* <Route exact path="/thankyou" component={Thankyou} /> */}
           <Route component={Error} />
         </Switch>
       </Layout>

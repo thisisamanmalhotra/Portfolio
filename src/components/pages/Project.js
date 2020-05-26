@@ -17,9 +17,9 @@ import beach3 from "./../../assets/images/beach3.jpeg";
 import Button2 from "../Button2";
 
 const MainWrapper = styled.div`
-  padding-top: 7rem;
   display: flex;
   flex-direction: column;
+  padding-top: 7rem;
   text-align: center;
   margin: 0;
   font-family: "Montserrat", sans-serif;
