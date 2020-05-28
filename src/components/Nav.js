@@ -102,6 +102,7 @@ const Style = styled.div`
       props.theme.mode === "dark" ? "#202224" : "#fff"};
     display: flex;
     justify-content: space-around;
+    align-items: center;
     overflow: hidden;
     position: relative;
 

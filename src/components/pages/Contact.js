@@ -36,10 +36,28 @@ const MainWrapper = styled.div`
     font-weight: bold;
   }
 
-  .contactform,
+  .contactform {
+    width: 60%;
+    padding: 1rem;
+    animation: para 1s ease;
+  }
+
+  @keyframes para {
+    0% {
+      transform: translateX(-20px);
+    }
+  }
+
   .contactdirect {
     width: 60%;
     padding: 1rem;
+    animation: para1 1s ease;
+  }
+
+  @keyframes para1 {
+    0% {
+      transform: translateX(20px);
+    }
   }
 
   .contactdirect {
