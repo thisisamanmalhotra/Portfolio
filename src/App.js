@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import ReactGA from "react-ga";
 import ScrollToTop from "react-scroll-up";
+import Particles from "react-particles-js";
 
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -25,6 +26,46 @@ function App() {
   return (
     <Fragment>
       <Nav />
+      <Particles
+        style={{
+          position: "fixed",
+          left: "0",
+          top: "0",
+          width: "100%",
+          height: "100%",
+          zIndex: "-999",
+        }}
+        params={{
+          particles: {
+            number: {
+              value: 20,
+              density: {
+                enable: true,
+              },
+            },
+            size: {
+              value: 20,
+              random: true,
+              anim: {
+                speed: 4,
+                size_min: 0.5,
+              },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              random: true,
+              speed: 1,
+              direction: "bottom",
+              out_mode: "out",
+            },
+            color: {
+              value: "#089eca",
+            },
+          },
+        }}
+      />
       <ScrollToTop
         showUnder={150}
         duration={1000}

@@ -7,7 +7,6 @@ import Card from "./Card";
 import vivek from "./../../assets/images/vivek.svg";
 import resume from "./../../assets/Resume.pdf";
 import ampersand from "./../../assets/images/ampersand.svg";
-import bgImage from "./../../assets/images/bg.svg";
 import Button from "../Button";
 
 const MainWrapper = styled.div`
@@ -17,10 +16,6 @@ const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-image: url(${bgImage});
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
   animation: homePg 3s;
 
   @keyframes homePg {

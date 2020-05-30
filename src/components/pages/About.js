@@ -91,7 +91,8 @@ function About() {
       <br />
       <br />
       <p>
-        I'm Vivek, a 20 year old, Self-taught designer and coder from India.
+        I'm Vivek, a 20 year old, Self-taught full stack web-developer from
+        India.
       </p>
       <p>
         I'm a 3rd year student current completing my Bachelors in Computer
@@ -108,14 +109,14 @@ function About() {
       </p>
       <p>
         I started developing an interest in JavaScript and at that moment I got
-        myself clear that I would like to continue my journey ahead with
-        JavaScript. During this time I took a few courses and watched a
+        myself clear that I would like to continue my journey ahead with Web
+        development. During this time I took a few courses and watched a
         countless number of YouTube videos.
       </p>
       <p>
         I dream of creating my course someday to help others learn the modern
-        trends in Computer Science and thinking of starting from the YouTube
-        which is a great platform to start.
+        trends in Computer Science and thinking of starting from YouTube which
+        is a great platform to start.
       </p>
       <p>
         I like to cook and play Clash of Clans & PUBG in my free time (I am
