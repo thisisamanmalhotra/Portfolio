@@ -38,13 +38,14 @@ function App() {
         params={{
           particles: {
             number: {
-              value: 20,
+              value: 160,
               density: {
-                enable: true,
+                enable: false,
               },
             },
+            color: "#089eca",
             size: {
-              value: 20,
+              value: 5,
               random: true,
               anim: {
                 speed: 4,
@@ -57,11 +58,32 @@ function App() {
             move: {
               random: true,
               speed: 1,
-              direction: "bottom",
+              direction: "top",
               out_mode: "out",
             },
-            color: {
-              value: "#089eca",
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onclick: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+            modes: {
+              bubble: {
+                distance: 250,
+                duration: 2,
+                size: 0,
+                opacity: 0,
+              },
+              repulse: {
+                distance: 400,
+                duration: 4,
+              },
             },
           },
         }}
