@@ -5,7 +5,7 @@ import ReactGA from "react-ga";
 import { FaLink } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
-import port1 from "./../../assets/images/port1.jpeg";
+import port1 from "./../../assets/images/port1.png";
 import port2 from "./../../assets/images/port2.jpeg";
 import port3 from "./../../assets/images/port3.jpeg";
 import srmth1 from "./../../assets/images/srmth1.jpeg";
