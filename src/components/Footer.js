@@ -87,7 +87,7 @@ const Footer = () => (
         <FaTwitter />
       </a>
       <a
-        href="https://www.instagram.com/vivekk.js/"
+        href="https://www.instagram.com/web_tips_and_designs/"
         target="_blank"
         rel="noopener noreferrer"
         className="a"
