@@ -67,7 +67,7 @@ function Button({ link, text }) {
     <MainWrapper>
       <button className="btn">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <span class="btn-label">{text}</span>
+          <span className="btn-label">{text}</span>
         </a>
       </button>
     </MainWrapper>

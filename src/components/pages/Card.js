@@ -96,26 +96,35 @@ const MainWrapper = styled.section`
   }
 `;
 
+const data = [
+  {
+    id: "1",
+    heading: "PROJECTS",
+    link: "/projects",
+    desc:
+      "Collection of all my projects done so far open source and professional.",
+  },
+  {
+    id: "2",
+    heading: "BLOGS",
+    link: "/blog",
+    desc: "Tips and tricks to make lives of developers easy.",
+  },
+];
+
 const Card = () => (
   <MainWrapper>
-    <div className="card crd1">
-      <div className="heading">
-        <Link to="/projects">PROJECTS</Link>
-      </div>
-      <hr />
-      <div className="description">
-        Collection of all my projects done so far open source and professional.
-      </div>
-    </div>
-    <div className="card crd2">
-      <div className="heading">
-        <Link to="/blog">BLOGS</Link>
-      </div>
-      <hr />
-      <div className="description">
-        Tips and tricks to make lives of developers easy.
-      </div>
-    </div>
+    {data.map((element) => {
+      return (
+        <div className="card">
+          <div className="heading" key={element.id}>
+            <Link to={element.link}>{element.heading}</Link>
+          </div>
+          <hr />
+          <div className="description">{element.desc}</div>
+        </div>
+      );
+    })}
   </MainWrapper>
 );
 
