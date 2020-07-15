@@ -187,7 +187,7 @@ function Home() {
               Hi! 👋 I'm <span className="span1">Vivek</span>
             </h1>
             <h1>
-              a Developer based in Chennai, India
+              a Developer based in New Delhi, India
               <span className="span2"> IN</span>
             </h1>
 
