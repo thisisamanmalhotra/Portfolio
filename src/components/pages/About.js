@@ -116,7 +116,8 @@ function About() {
       <p>
         I dream of creating my course someday to help others learn the modern
         trends in Computer Science and thinking of starting from YouTube which
-        is a great platform to start.
+        is a great platform to start. If you're up for collab,{" "}
+        <a href="/contact">contact me.</a>
       </p>
       <p>
         I like to cook and play Clash of Clans & PUBG in my free time (I am

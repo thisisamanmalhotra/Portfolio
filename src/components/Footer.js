@@ -96,7 +96,8 @@ const Footer = () => (
       </a>
     </div>
     <div className="col2">
-      <p>© {new Date().getFullYear().toString()} Vivek Mittal</p>
+      <p>© {new Date().getFullYear().toString()}</p>
+      <p>Designed & Coded by Vivek Mittal</p>
     </div>
   </Style>
 );

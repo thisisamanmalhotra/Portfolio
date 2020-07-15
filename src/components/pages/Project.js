@@ -136,7 +136,7 @@ function Projects() {
           <div className="col2">
             <p>This very site you're watching right now.</p>
             <br />
-            <p className="skills">REACTJS - STYLED COMPONENTS</p>
+            <p className="skills">REACTJS - STYLED COMPONENTS - FIGMA</p>
             <Button2 link="/" icon={<FaLink className="icon" />} text="VISIT" />
           </div>
         </div>

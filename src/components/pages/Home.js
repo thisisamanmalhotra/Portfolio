@@ -119,8 +119,6 @@ const MainWrapper = styled.div`
   }
 
   .col2 img {
-    border: 1px solid #c2c2c2;
-    box-shadow: 0px 3px 3px #c2c2c2;
     border-radius: 50%;
   }
 
