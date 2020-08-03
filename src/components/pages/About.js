@@ -95,7 +95,7 @@ function About() {
         India.
       </p>
       <p>
-        I'm a 3rd year student current completing my Bachelors in Computer
+        I'm a final year student current completing my Bachelors in Computer
         Science from SRM Institute Of Science and Technology.
       </p>
       <p>
@@ -108,16 +108,10 @@ function About() {
         CSS and then I moved on with JavaScript.
       </p>
       <p>
-        I started developing an interest in JavaScript and at that moment I got
-        myself clear that I would like to continue my journey ahead with Web
-        development. During this time I took a few courses and watched a
+        I quickly started developing an interest in JavaScript and at that
+        moment I got myself clear that I would like to continue my journey ahead
+        with this language. During this time I took a few courses and watched a
         countless number of YouTube videos.
-      </p>
-      <p>
-        I dream of creating my course someday to help others learn the modern
-        trends in Computer Science and thinking of starting from YouTube which
-        is a great platform to start. If you're up for collab,{" "}
-        <a href="/contact">contact me.</a>
       </p>
       <p>
         I like to cook and play Clash of Clans & PUBG in my free time (I am
