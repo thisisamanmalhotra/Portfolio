@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ReactGA from "react-ga";
 import { Helmet } from "react-helmet";
+import ReactRotatingText from "react-rotating-text";
 
 import Card from "./Card";
 import vivek from "./../../assets/images/vivek.svg";
@@ -194,7 +195,16 @@ function Home() {
             </p>
 
             <p>
-              A <span className="change-content"></span> Full-Stack Developer!
+              A{" "}
+              <ReactRotatingText
+                items={["Passionate", "Committed", "Self taught"]}
+                cursor={false}
+                style={{
+                  fontWeight: "bold",
+                  color: "#089",
+                }}
+              />{" "}
+              Full-Stack Developer!
             </p>
           </div>
         </div>
