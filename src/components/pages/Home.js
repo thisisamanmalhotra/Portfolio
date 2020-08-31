@@ -6,7 +6,7 @@ import ReactRotatingText from "react-rotating-text";
 
 import Card from "./Card";
 import vivek from "./../../assets/images/vivek.svg";
-import resume from "./../../assets/Resume.pdf";
+import resume from "./../../assets/Vivek_Mittal_Class_of_2021.pdf";
 import ampersand from "./../../assets/images/ampersand.svg";
 import Button from "../Button";
 
