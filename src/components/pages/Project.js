@@ -11,9 +11,9 @@ import port3 from "./../../assets/images/port3.jpeg";
 import srmth1 from "./../../assets/images/srmth1.jpeg";
 import srmth2 from "./../../assets/images/srmth2.jpeg";
 import srmth3 from "./../../assets/images/srmth3.jpeg";
-import beach1 from "./../../assets/images/beach1.jpeg";
-import beach2 from "./../../assets/images/beach2.jpeg";
-import beach3 from "./../../assets/images/beach3.jpeg";
+import blog1 from "./../../assets/images/blog1.png";
+import blog2 from "./../../assets/images/blog2.png";
+import blog3 from "./../../assets/images/blog3.png";
 import Button2 from "../Button2";
 
 const MainWrapper = styled.div`
@@ -127,17 +127,27 @@ function Projects() {
       <h2>PROJECTS</h2>
       <hr />
       <hr />
+
       <div className="projects">
-        <p className="heading">Portfolio Site</p>
+        <p className="heading">Personal Blog</p>
         <div className="row">
           <div className="col1">
-            <SliderView img1={port1} img2={port2} img3={port3} />
+            <SliderView img1={blog1} img2={blog2} img3={blog3} />
           </div>
           <div className="col2">
-            <p>This very site you're watching right now.</p>
+            <p>
+              My personal blog site where I try to make life of web developers
+              easy.
+            </p>
             <br />
-            <p className="skills">REACTJS - STYLED COMPONENTS - FIGMA</p>
-            <Button2 link="/" icon={<FaLink className="icon" />} text="VISIT" />
+            <p className="skills">
+              GATSBY - GRAPHQL - MDX - REACTJS - STYLED COMPONENTS - FIGMA
+            </p>
+            <Button2
+              link="https://vivek-writes.netlify.com"
+              icon={<FaLink className="icon" />}
+              text="VISIT"
+            />
           </div>
         </div>
       </div>
@@ -146,24 +156,16 @@ function Projects() {
       <hr />
 
       <div className="projects">
-        <p className="heading">Beach Resort</p>
+        <p className="heading">Portfolio Site</p>
         <div className="row">
           <div className="col2">
-            <p>
-              My internship Project. This site was created for all the beach
-              lovers who like to travel around the globe and love to have a
-              beach view from their resorts/hotels.
-            </p>
+            <p>This very site you're watching right now.</p>
             <br />
-            <p className="skills">REACTJS - CONTENTFUL CMS</p>
-            <Button2
-              link="https://resort.ga"
-              icon={<FaLink className="icon" />}
-              text="VISIT"
-            />
+            <p className="skills">REACTJS - STYLED COMPONENTS - FIGMA</p>
+            <Button2 link="/" icon={<FaLink className="icon" />} text="VISIT" />
           </div>
           <div className="col1">
-            <SliderView img1={beach1} img2={beach2} img3={beach3} />
+            <SliderView img1={port1} img2={port2} img3={port3} />
           </div>
         </div>
       </div>
